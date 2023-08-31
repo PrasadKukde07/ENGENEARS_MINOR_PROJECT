@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --color-primary:#eaecf7 ;
+    --color-secondary:#d7d7d7;
+    --color-btn: rgba(17, 4, 52,1);
+}
+body{
+    background-color: var(--color-secondary);
+    
+}
+.navbar{
+    border-bottom: 20px rgba(0, 45, 112, 0.932);
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    cursor: pointer;
+    align-content: center ;
+    float: left;
+    list-style: none;
+    color: #fff;
+    margin: 12px 23px;
+    font-size: 1.5rem;
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: #9fd1ffef;
+}
+.navbar li img{
+    padding: 0;
+    margin: 0;
+    height: 25px;
+}
+
+#flex{
+    display: flex;
+    padding: .5rem;  
+    gap: 1.8rem; 
+    background-color: var(--color-primary); 
+}
+
+.content{
+    background-color: red;
+}
+
+
+                                        /* Left-Content */
+
+#content-left{
+    width: 16vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid black;
+    position: fixed;
+    padding-left: 1.3rem;
+    margin-top: 3.5rem;   
+}
+#content-left img{
+    display: inline-block;
+    padding-top: 0.9rem;    
+}
+#content-left span{
+    display: inline-block;
+    font-size:  2.1rem;    
+}
+#content-left ul{
+    overflow: auto;
+    list-style: none;
+    font-size: 1.1rem;
+    padding: .8rem;
+}
+
+                                 /* Left-Right */
+
+#content-left-down{
+    width: 17.05vw;
+    margin-top: 28.2vw;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-left: 0.3rem;
+    position: fixed;  
+}
+#content-left-down span{
+    display: inline-block;
+    font-size:  2.0rem;
+} 
+#content-left-down p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+    /* Main Content */
+
+#main-content{
+    margin-top: 3.5rem;
+    margin-left: 17.8vw;
+    margin-right: 18vw;
+    width: 100vw;
+    background-color: white;
+}
+.sub-heading {
+    background-color: rgba(17, 4, 52,1);
+    color: #fff;
+    padding-left: 16rem;
+    font-size: 3rem;
+}
+.heading{
+    font-size: 2.5rem;
+}
+#main-content img{
+    width: 53vw;
+}
+.slider-container{
+    margin-left: 4rem;
+    display: flex;
+    width: 53vw;
+    overflow : auto;
+    scroll-snap-type: x mandatory;
+}
+.slider-container .slide{
+    scroll-snap-align: start ;
+}
+.slider-container img{
+    width: 53vw;
+    object-fit: cover;
+}
+#services span{
+margin-left: 18rem;
+}
+
+
+
+#talk{
+    font-size: 2rem;
+    display: grid;
+    text-align: center;
+    
+}
+#talk .talk-grid{
+    margin: .3rem;
+    background-color: rgb(220, 230, 253);
+}
+#talk-grid-span{
+    margin-left: 10rem;
+}
+
+.services-items{
+    border: 2px;
+    border-color: #000000;
+    border-style: outset;
+    border-radius: 1rem;
+}
+.services-items img{
+    width: 40vw;
+    height: 25vw;
+    cursor: pointer;
+}
+.services-items p{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+#services .first{
+    margin-right: 8.5rem; 
+}
+#services .second{
+    margin-left: 8.5rem; 
+}
+
+ /* Right */
+ #content-right{
+    width: 16vw;
+    height: 62vh;
+    margin-top: 3.5rem;
+    margin-left: 80.3vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid black;
+    position: fixed;
+    padding-left: 1.3rem; 
+ }
+ #content-right ul{
+    overflow: auto;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 2rem;
+ }
+ #content-right ul li{
+margin-top: 2rem;
+cursor: pointer;
+ }
+.btn{
+    text-align: center;
+    font-size: 2rem;
+    color:#fff ;
+    cursor: pointer;
+    background-color: var(--color-btn);
+    border-radius: .3rem;
+    padding-left: 4rem;
+    padding-right: 5rem;
+ }
+
+
+    /* About */
+#about{
+    margin-left: 20vw;
+    width: 60vw;
+}
+#about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    padding: 10px;
+}
+#about-grid b{
+    font-size: 1.3rem;
+    margin-left: 30px;
+}
+.grid-item ul{
+    overflow: auto;
+    list-style: none;
+    
+}
+.grid-item ul li{
+    margin: 1.2rem;
+}
